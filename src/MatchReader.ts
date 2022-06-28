@@ -1,12 +1,13 @@
 import { matchResult } from "./MatchResult";
 import { dateStringToDate } from "./utils";
+import {MatchData} from "./MatchData"
 
 interface DataReader {
   read(): void;
   data: string[][];
 }
 
-type MatchData = [Date, string, string, number, number, matchResult, string];
+
 
 
 export class MatchReader {
